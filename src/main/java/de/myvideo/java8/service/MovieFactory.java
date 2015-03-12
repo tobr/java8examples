@@ -11,7 +11,7 @@ import java.util.Random;
 
 public abstract class MovieFactory {
 
-    public static List<Movie> createMovies() {
+    public static List<Movie> sampleMovies() {
         return Arrays.asList(
                 new Movie(1, "Hostage", 3854, MovieType.FILM, true),
                 new Movie(2, "Austin Powers", 7262, MovieType.FILM, true),

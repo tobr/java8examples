@@ -1,7 +1,8 @@
-package de.myvideo.java8.service;
+package de.myvideo.java8;
 
 
 import de.myvideo.java8.model.Movie;
+import de.myvideo.java8.service.MovieFactory;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -23,6 +24,6 @@ public class LambdaExample {
     }
 
     public static void main(String[] args) {
-        LambdaExample.compareMoviesByViewCount(MovieFactory.createMovies());
+        LambdaExample.compareMoviesByViewCount(MovieFactory.sampleMovies());
     }
 }

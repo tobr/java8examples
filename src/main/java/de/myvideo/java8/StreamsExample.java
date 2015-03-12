@@ -1,7 +1,8 @@
-package de.myvideo.java8.service;
+package de.myvideo.java8;
 
 
 import de.myvideo.java8.model.Movie;
+import de.myvideo.java8.service.MovieFactory;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,7 +37,7 @@ public class StreamsExample {
 
 
     public static void main(String[] args) {
-        List<Movie> movies = MovieFactory.createMovies();
+        List<Movie> movies = MovieFactory.sampleMovies();
         List<String> topMovieNames = StreamsExample.getMostViewedMovieNamesIterative(movies);
         System.out.println(topMovieNames.toString());
 
