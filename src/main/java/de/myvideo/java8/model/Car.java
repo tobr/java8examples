@@ -7,4 +7,8 @@ public class Car {
     public Insurance getInsurance() {
         return insurance;
     }
+
+    public void setInsurance(final Insurance insurance) {
+        this.insurance = insurance;
+    }
 }

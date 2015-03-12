@@ -1,9 +1,6 @@
 package de.myvideo.java8;
 
 public class DefaultMethodExample {
-    public static void main(String... args) {
-        new C().hello();
-    }
 
     static interface A{
         public default void hello() {
@@ -22,4 +19,9 @@ public class DefaultMethodExample {
             A.super.hello();
         }
     }
+
+    public static void main(final String... args) {
+        new C().hello();
+    }
+
 }

@@ -9,14 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-
-import static java.util.Comparator.comparingInt;
-import static java.util.stream.Collectors.collectingAndThen;
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.maxBy;
-import static java.util.stream.Collectors.summingInt;
 
 public class CollectorsExample {
 
@@ -35,7 +27,7 @@ public class CollectorsExample {
         System.out.println(moviesByMovieTypes);
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         List<Movie> movies = MovieFactory.sampleMovies();
         CollectorsExample.groupImperatively(movies);
     }

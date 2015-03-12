@@ -3,11 +3,7 @@ package de.myvideo.java8;
 
 public class DiamondExample {
 
-    public static void main(String...args){
-        new D().hello();
-    }
-
-    static interface A{
+    static interface A {
         public default void hello() {
             System.out.println("Hello from A");
         }
@@ -21,5 +17,9 @@ public class DiamondExample {
 
     static class D implements B, C {
 
+    }
+
+    public static void main(final String...args){
+        new D().hello();
     }
 }

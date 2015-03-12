@@ -7,4 +7,8 @@ public class Person {
     public Car getCar() {
         return car;
     }
+
+    public void setCar(final Car car) {
+        this.car = car;
+    }
 }

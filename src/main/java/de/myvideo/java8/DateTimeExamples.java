@@ -9,14 +9,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
-import java.time.ZoneId;
 import java.time.chrono.JapaneseDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.Temporal;
-import java.time.temporal.TemporalAdjuster;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -95,7 +90,7 @@ public class DateTimeExamples {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         useOldDate();
         //useLocalDate();
         //useTemporalAdjuster();

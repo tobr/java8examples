@@ -36,7 +36,7 @@ public class StreamsExample {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         List<Movie> movies = MovieFactory.sampleMovies();
         List<String> topMovieNames = StreamsExample.getMostViewedMovieNamesIterative(movies);
         System.out.println(topMovieNames.toString());
