@@ -9,11 +9,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-
 public class StreamsExample {
     private static final int MANY_VIEWS = 5_000;
 
-    public static List<String> getMostViewedMovieNamesIterative(final List<Movie> movies) {
+    public static List<String> getMostViewedMovieNames(final List<Movie> movies) {
         List<Movie> mostViewedMovies = new ArrayList<>();
         for (Movie m : movies) {
             if (m.getViewCount() > MANY_VIEWS) {
@@ -38,7 +37,7 @@ public class StreamsExample {
 
     public static void main(final String[] args) {
         List<Movie> movies = MovieFactory.sampleMovies();
-        List<String> topMovieNames = StreamsExample.getMostViewedMovieNamesIterative(movies);
+        List<String> topMovieNames = StreamsExample.getMostViewedMovieNames(movies);
         System.out.println(topMovieNames.toString());
 
     }

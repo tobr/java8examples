@@ -15,7 +15,7 @@ public class LambdaExample {
                 new Comparator<Movie>() {
                     @Override
                     public int compare(final Movie movie, final Movie other) {
-                        return movie.getViewCount().compareTo(other.getViewCount());
+                        return other.getViewCount().compareTo(movie.getViewCount());
                     }
                 };
 

@@ -1,8 +1,4 @@
-package de.myvideo.java8;
-
-import de.myvideo.java8.model.Car;
-import de.myvideo.java8.model.Insurance;
-import de.myvideo.java8.model.Person;
+package de.myvideo.java8.optional;
 
 public class OptionalExample {
 

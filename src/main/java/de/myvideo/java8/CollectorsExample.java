@@ -10,6 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
+
 public class CollectorsExample {
 
     private static void groupImperatively(final List<Movie> movies) {
@@ -24,6 +27,7 @@ public class CollectorsExample {
             moviesForMovieType.add(movie);
         }
 
+        movies.stream().collect(groupingBy(Movie::getMovieType, counting()));
         System.out.println(moviesByMovieTypes);
     }
 

@@ -1,4 +1,4 @@
-package de.myvideo.java8.model;
+package de.myvideo.java8.optional;
 
 public class Car {
 
