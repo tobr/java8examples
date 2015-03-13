@@ -2,7 +2,7 @@ package de.myvideo.java8;
 
 
 import de.myvideo.java8.model.Movie;
-import de.myvideo.java8.service.MovieFactory;
+import de.myvideo.java8.factory.MovieFactory;
 
 import java.util.Collections;
 import java.util.Comparator;

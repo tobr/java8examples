@@ -3,15 +3,12 @@ package de.myvideo.java8;
 
 import de.myvideo.java8.model.Movie;
 import de.myvideo.java8.model.MovieType;
-import de.myvideo.java8.service.MovieFactory;
+import de.myvideo.java8.factory.MovieFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
 
 public class CollectorsExample {
 
@@ -27,7 +24,6 @@ public class CollectorsExample {
             moviesForMovieType.add(movie);
         }
 
-        movies.stream().collect(groupingBy(Movie::getMovieType, counting()));
         System.out.println(moviesByMovieTypes);
     }
 

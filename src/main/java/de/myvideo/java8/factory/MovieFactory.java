@@ -1,4 +1,4 @@
-package de.myvideo.java8.service;
+package de.myvideo.java8.factory;
 
 
 import de.myvideo.java8.model.Movie;
@@ -20,8 +20,8 @@ public abstract class MovieFactory {
                 new Movie(5, "Michael Jackson", 2654, MovieType.MUSIC, true),
                 new Movie(6, "Madonna", 4027, MovieType.MUSIC, true),
                 new Movie(7, "Funny Clips", 333, MovieType.UGC, false),
-                new Movie(8, "Big Boobs", 8638, MovieType.UGC, false),
-                new Movie(9, "LALA", 10, MovieType.UGC, false)
+                new Movie(8, "Bunny Pleasure", 8638, MovieType.UGC, false),
+                new Movie(9, "Funny Cat", 10, MovieType.UGC, false)
         );
     }
 
