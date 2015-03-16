@@ -15,7 +15,7 @@ public class PublicityFinder {
                                                    new SocialNetwork("Google"),
                                                    new SocialNetwork("Facebook"),
                                                    new SocialNetwork("Twitter"),
-                                                  // new SocialNetwork("Instagram"),
+                                                   new SocialNetwork("Instagram"),
                                                    new SocialNetwork("Pinterest"));
 
     private final Executor executor = Executors.newFixedThreadPool(socialNetworks.size(), new ThreadFactory() {
@@ -58,8 +58,8 @@ public class PublicityFinder {
     public static void main(String[] args) {
         PublicityFinder publicityFinder = new PublicityFinder();
         execute("sequential", () -> publicityFinder.findPublicitySequential("MyVideo"));
-        //execute("parallel", () -> publicityFinder.findPublicityParallel("MyVideo"));
-        //execute("composed CompletableFuture", () -> publicityFinder.findPublicityFuture("MyVideo"));
+        execute("parallel", () -> publicityFinder.findPublicityParallel("MyVideo"));
+        execute("composed CompletableFuture", () -> publicityFinder.findPublicityFuture("MyVideo"));
     }
 
     private static void execute(String msg, Supplier<List<String>> s) {

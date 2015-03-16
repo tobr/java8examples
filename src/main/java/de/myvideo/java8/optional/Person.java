@@ -1,14 +1,16 @@
 package de.myvideo.java8.optional;
 
+import java.util.Optional;
+
 public class Person {
 
-    private Car car;
+    private Optional<Car> car;
 
-    public Car getCar() {
+    public Optional<Car> getCar() {
         return car;
     }
 
-    public void setCar(final Car car) {
+    public void setCar(final Optional<Car> car) {
         this.car = car;
     }
 }

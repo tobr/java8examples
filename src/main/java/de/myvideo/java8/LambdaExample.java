@@ -23,7 +23,13 @@ public class LambdaExample {
         System.out.println(movies);
     }
 
+    public static void compareMoviesByViewCountLambda(final List<Movie> movies) {
+        Collections.sort(movies, Comparator.comparing(Movie::getViewCount).reversed());
+        System.out.println(movies);
+    }
+
     public static void main(final String[] args) {
         LambdaExample.compareMoviesByViewCount(MovieFactory.sampleMovies());
+        LambdaExample.compareMoviesByViewCountLambda(MovieFactory.sampleMovies());
     }
 }

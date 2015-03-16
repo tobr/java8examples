@@ -92,9 +92,9 @@ public class DateTimeExamples {
 
     public static void main(final String[] args) {
         useOldDate();
-        //useLocalDate();
-        //useTemporalAdjuster();
-        //useDateFormatter();
+        useLocalDate();
+        useTemporalAdjuster();
+        useDateFormatter();
     }
 
 }

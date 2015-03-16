@@ -1,14 +1,16 @@
 package de.myvideo.java8.optional;
 
+import java.util.Optional;
+
 public class Car {
 
-    private Insurance insurance;
+    private Optional<Insurance> insurance;
 
-    public Insurance getInsurance() {
+    public Optional<Insurance> getInsurance() {
         return insurance;
     }
 
-    public void setInsurance(final Insurance insurance) {
+    public void setInsurance(final Optional<Insurance> insurance) {
         this.insurance = insurance;
     }
 }
